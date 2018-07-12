@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="com.qait.automation.Test2.TestClass">
+        <methods>
+          <include name="verifyPopUpTitle"/>
+          <include name="verifyExitIntentPageIsDisplayed"/>
+          <include name="verifyStatusCodeOfPage"/>
+          <include name="VerifyLinkDisappearsAfterHoverAction"/>
+          <include name="verifyErrorMsgIsDisplayedOnInvalidLogin"/>
+          <include name="verifySuccessMsgIsDisplayedOnValidLogin"/>
+          <include name="checkNumberOfImagesOnHoverPage"/>
+          <include name="verifyLinkAppearsOnHoverAction"/>
+          <include name="verifyLoginPageIsDisplayed"/>
+          <include name="verifyStatusCodesPageIsDisplayed"/>
+          <include name="verify404Msg"/>
+          <include name="verifyTableIsSortedByDueColumn"/>
+          <include name="verifyHoverPageIsDisplayed"/>
+          <include name="verifySuccessfulAuthentication"/>
+          <include name="verifyBasicAuthPromptDisplayed"/>
+          <include name="verifyBrokenImagesAreReported"/>
+          <include name="init"/>
+          <include name="verifyDataTablesPafeIsDisplayed"/>
+          <include name="verifyLogOut"/>
+        </methods>
+      </class> <!-- com.qait.automation.Test2.TestClass -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
