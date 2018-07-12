@@ -1,0 +1,641 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/10/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 09 15:19:28 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (46 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testquestion2.Test_MyCollection.Test10_Rotate_Array()'><b>Test10_Rotate_Array</b><br>Test class: testquestion2.Test_MyCollection<br>Test method: Left Rotation Collection Functionality</td>
+<td><div><pre>java.lang.AssertionError: expected [{Is, Always, A Fun., Sometimes, Automation, Testing}] but found [question2.MyCollection@54a097cc]
+	at testquestion2.Test_MyCollection.Test10_Rotate_Array(Test_MyCollection.java:94)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace55909012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace55909012'><pre>java.lang.AssertionError: expected [{Is, Always, A Fun., Sometimes, Automation, Testing}] but found [question2.MyCollection@54a097cc]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at testquestion2.Test_MyCollection.Test10_Rotate_Array(Test_MyCollection.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>testquestion2.Test_MyCollection@445b84c0</td></tr>
+<tr>
+<td title='testquestion2.Test_MyCollection.Test1_Able_To_Add_New_Entry_In_Collection()'><b>Test1_Able_To_Add_New_Entry_In_Collection</b><br>Test class: testquestion2.Test_MyCollection<br>Test method: Check Add functionality</td>
+<td><div><pre>java.lang.AssertionError: Assertion Failed : Not able to add number 5 in collection expected [true] but found [false]
+	at testquestion2.Test_MyCollection.Test1_Able_To_Add_New_Entry_In_Collection(Test_MyCollection.java:16)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1394336709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1394336709'><pre>java.lang.AssertionError: Assertion Failed : Not able to add number 5 in collection expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at testquestion2.Test_MyCollection.Test1_Able_To_Add_New_Entry_In_Collection(Test_MyCollection.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>testquestion2.Test_MyCollection@445b84c0</td></tr>
+<tr>
+<td title='testquestion1.Test_MyCollection.Test3_Get_Collection_Functionality()'><b>Test3_Get_Collection_Functionality</b><br>Test class: testquestion1.Test_MyCollection<br>Test method: Check toString function</td>
+<td><div><pre>java.lang.ArrayIndexOutOfBoundsException: -1
+	at question1.MyCollection.toString(MyCollection.java:113)
+	at testquestion1.Test_MyCollection.Test3_Get_Collection_Functionality(Test_MyCollection.java:32)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1225373914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1225373914'><pre>java.lang.ArrayIndexOutOfBoundsException: -1
+	at question1.MyCollection.toString(MyCollection.java:113)
+	at testquestion1.Test_MyCollection.Test3_Get_Collection_Functionality(Test_MyCollection.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>testquestion1.Test_MyCollection@61443d8f</td></tr>
+<tr>
+<td title='testquestion2.Test_MyCollection.Test3_Get_Collection_Functionality()'><b>Test3_Get_Collection_Functionality</b><br>Test class: testquestion2.Test_MyCollection<br>Test method: Check toString function</td>
+<td><div><pre>java.lang.AssertionError: Assertion Failed : Not able to read collection expected [{}] but found [question2.MyCollection@735b478]
+	at testquestion2.Test_MyCollection.Test3_Get_Collection_Functionality(Test_MyCollection.java:32)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace748658608", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace748658608'><pre>java.lang.AssertionError: Assertion Failed : Not able to read collection expected [{}] but found [question2.MyCollection@735b478]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at testquestion2.Test_MyCollection.Test3_Get_Collection_Functionality(Test_MyCollection.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>testquestion2.Test_MyCollection@445b84c0</td></tr>
+<tr>
+<td title='testquestion2.Test_MyCollection.Test4_DoubleCapacity()'><b>Test4_DoubleCapacity</b><br>Test class: testquestion2.Test_MyCollection<br>Test method: Check Overflow Collection</td>
+<td><div><pre>java.lang.AssertionError: Assertion Failed : Not able to add number in collection once it get fulled expected [{4,5,-4,-5,6}] but found [question2.MyCollection@2096442d]
+	at testquestion2.Test_MyCollection.Test4_DoubleCapacity(Test_MyCollection.java:41)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace167185492", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace167185492'><pre>java.lang.AssertionError: Assertion Failed : Not able to add number in collection once it get fulled expected [{4,5,-4,-5,6}] but found [question2.MyCollection@2096442d]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at testquestion2.Test_MyCollection.Test4_DoubleCapacity(Test_MyCollection.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>testquestion2.Test_MyCollection@445b84c0</td></tr>
+<tr>
+<td title='testquestion1.Test_MyCollection.Test5_Remove_Functionality_If_Entry_Already_Present()'><b>Test5_Remove_Functionality_If_Entry_Already_Present</b><br>Test class: testquestion1.Test_MyCollection<br>Test method: Check remove functionality</td>
+<td><div><pre>java.lang.ArrayIndexOutOfBoundsException: 12
+	at question1.MyCollection.remove(MyCollection.java:74)
+	at testquestion1.Test_MyCollection.Test5_Remove_Functionality_If_Entry_Already_Present(Test_MyCollection.java:50)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace759156157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace759156157'><pre>java.lang.ArrayIndexOutOfBoundsException: 12
+	at question1.MyCollection.remove(MyCollection.java:74)
+	at testquestion1.Test_MyCollection.Test5_Remove_Functionality_If_Entry_Already_Present(Test_MyCollection.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>testquestion1.Test_MyCollection@61443d8f</td></tr>
+<tr>
+<td title='testquestion2.Test_MyCollection.Test5_Remove_Functionality_If_Entry_Already_Present()'><b>Test5_Remove_Functionality_If_Entry_Already_Present</b><br>Test class: testquestion2.Test_MyCollection<br>Test method: Check remove functionality</td>
+<td><div><pre>java.lang.AssertionError: Assetion Failed : Not Able to delete entry from collection expected [true] but found [false]
+	at testquestion2.Test_MyCollection.Test5_Remove_Functionality_If_Entry_Already_Present(Test_MyCollection.java:50)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace592179046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace592179046'><pre>java.lang.AssertionError: Assetion Failed : Not Able to delete entry from collection expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at testquestion2.Test_MyCollection.Test5_Remove_Functionality_If_Entry_Already_Present(Test_MyCollection.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>testquestion2.Test_MyCollection@445b84c0</td></tr>
+<tr>
+<td title='testquestion2.Test_MyCollection.Test7_Collection_Length_Functionality()'><b>Test7_Collection_Length_Functionality</b><br>Test class: testquestion2.Test_MyCollection<br>Test method: Size of Collection</td>
+<td><div><pre>java.lang.AssertionError: expected [6] but found [0]
+	at testquestion2.Test_MyCollection.Test7_Collection_Length_Functionality(Test_MyCollection.java:66)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1641808846", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1641808846'><pre>java.lang.AssertionError: expected [6] but found [0]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at testquestion2.Test_MyCollection.Test7_Collection_Length_Functionality(Test_MyCollection.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>testquestion2.Test_MyCollection@445b84c0</td></tr>
+<tr>
+<td title='testquestion2.Test_MyCollection.Test8_Search_Functionality_If_Enrty_Exists()'><b>Test8_Search_Functionality_If_Enrty_Exists</b><br>Test class: testquestion2.Test_MyCollection<br>Test method: Search Functionality</td>
+<td><div><pre>java.lang.AssertionError: expected [1] but found [0]
+	at testquestion2.Test_MyCollection.Test8_Search_Functionality_If_Enrty_Exists(Test_MyCollection.java:75)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1358444045", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1358444045'><pre>java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at testquestion2.Test_MyCollection.Test8_Search_Functionality_If_Enrty_Exists(Test_MyCollection.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>testquestion2.Test_MyCollection@445b84c0</td></tr>
+<tr>
+<td title='testquestion2.Test_MyCollection.Test9_Search_Functionality_If_Enrty_Not_Exists()'><b>Test9_Search_Functionality_If_Enrty_Not_Exists</b><br>Test class: testquestion2.Test_MyCollection<br>Test method: Search Functionality</td>
+<td><div><pre>java.lang.AssertionError: expected [-1] but found [0]
+	at testquestion2.Test_MyCollection.Test9_Search_Functionality_If_Enrty_Not_Exists(Test_MyCollection.java:84)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace750044075", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace750044075'><pre>java.lang.AssertionError: expected [-1] but found [0]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at testquestion2.Test_MyCollection.Test9_Search_Functionality_If_Enrty_Not_Exists(Test_MyCollection.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:204)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:107)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:112)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>testquestion2.Test_MyCollection@445b84c0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testquestion1.Test_MyCollection.Test10_Rotate_Array()'><b>Test10_Rotate_Array</b><br>Test class: testquestion1.Test_MyCollection<br>Test method: Left Rotation Collection Functionality<br/>
+<a href="#Output-1566723494" onClick='toggleBox("Output-1566723494", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1566723494" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1566723494">
+[INFO] : Assertion Passed : Rotation is working fine<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testquestion1.Test_MyCollection@61443d8f</td></tr>
+<tr>
+<td title='testquestion1.Test_MyCollection.Test1_Able_To_Add_New_Entry_In_Collection()'><b>Test1_Able_To_Add_New_Entry_In_Collection</b><br>Test class: testquestion1.Test_MyCollection<br>Test method: Check Add functionality<br/>
+<a href="#Output-66233253" onClick='toggleBox("Output-66233253", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-66233253" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-66233253">
+[INFO] : Assertion Passed : Add New Entry functionality is working fine<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testquestion1.Test_MyCollection@61443d8f</td></tr>
+<tr>
+<td title='testquestion1.Test_MyCollection.Test2_Duplicate_Entry_In_Collection()'><b>Test2_Duplicate_Entry_In_Collection</b><br>Test class: testquestion1.Test_MyCollection<br>Test method: Check Add functionality<br/>
+<a href="#Output-1286783232" onClick='toggleBox("Output-1286783232", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1286783232" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1286783232">
+[INFO] : Assertion Passed : Not able to add duplicate number<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testquestion1.Test_MyCollection@61443d8f</td></tr>
+<tr>
+<td title='testquestion2.Test_MyCollection.Test2_Duplicate_Entry_In_Collection()'><b>Test2_Duplicate_Entry_In_Collection</b><br>Test class: testquestion2.Test_MyCollection<br>Test method: Check Add functionality<br/>
+<a href="#Output-1387228415" onClick='toggleBox("Output-1387228415", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1387228415" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1387228415">
+[INFO] : Assertion Passed : Not able to add duplicate number<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testquestion2.Test_MyCollection@445b84c0</td></tr>
+<tr>
+<td title='testquestion1.Test_MyCollection.Test4_DoubleCapacity()'><b>Test4_DoubleCapacity</b><br>Test class: testquestion1.Test_MyCollection<br>Test method: Check Overflow Collection<br/>
+<a href="#Output-60830820" onClick='toggleBox("Output-60830820", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-60830820" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-60830820">
+[INFO] : Assertion Passed : Able to increase collection capacity<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testquestion1.Test_MyCollection@61443d8f</td></tr>
+<tr>
+<td title='testquestion1.Test_MyCollection.Test6_Remove_Functionality_If_Collection_Is_Empty()'><b>Test6_Remove_Functionality_If_Collection_Is_Empty</b><br>Test class: testquestion1.Test_MyCollection<br>Test method: Check remove functionality<br/>
+<a href="#Output-1635546341" onClick='toggleBox("Output-1635546341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1635546341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1635546341">
+[INFO] : Assertion Passed : Can handle remove parameter if collection is empty<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testquestion1.Test_MyCollection@61443d8f</td></tr>
+<tr>
+<td title='testquestion2.Test_MyCollection.Test6_Remove_Functionality_If_Collection_Is_Empty()'><b>Test6_Remove_Functionality_If_Collection_Is_Empty</b><br>Test class: testquestion2.Test_MyCollection<br>Test method: Check remove functionality<br/>
+<a href="#Output-1937348256" onClick='toggleBox("Output-1937348256", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1937348256" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1937348256">
+[INFO] : Assertion Passed : Can handle remove parameter if collection is empty<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testquestion2.Test_MyCollection@445b84c0</td></tr>
+<tr>
+<td title='testquestion1.Test_MyCollection.Test7_Collection_Length_Functionality()'><b>Test7_Collection_Length_Functionality</b><br>Test class: testquestion1.Test_MyCollection<br>Test method: Size of Collection<br/>
+<a href="#Output-1698156408" onClick='toggleBox("Output-1698156408", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1698156408" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1698156408">
+[INFO] : Assertion Passed : Collection length is correct<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testquestion1.Test_MyCollection@61443d8f</td></tr>
+<tr>
+<td title='testquestion1.Test_MyCollection.Test8_Search_Functionality_If_Enrty_Exists()'><b>Test8_Search_Functionality_If_Enrty_Exists</b><br>Test class: testquestion1.Test_MyCollection<br>Test method: Search Functionality<br/>
+<a href="#Output-1740035246" onClick='toggleBox("Output-1740035246", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1740035246" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1740035246">
+[INFO] : Assertion Passed : Function returns position of entry in collection<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testquestion1.Test_MyCollection@61443d8f</td></tr>
+<tr>
+<td title='testquestion1.Test_MyCollection.Test9_Search_Functionality_If_Enrty_Not_Exists()'><b>Test9_Search_Functionality_If_Enrty_Not_Exists</b><br>Test class: testquestion1.Test_MyCollection<br>Test method: Search Functionality<br/>
+<a href="#Output-884457408" onClick='toggleBox("Output-884457408", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-884457408" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-884457408">
+[INFO] : Assertion Passed : Function returns -1 if entry is not present<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testquestion1.Test_MyCollection@61443d8f</td></tr>
+</table><p>
+</body>
+</html>

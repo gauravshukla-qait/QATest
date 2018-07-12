@@ -1,0 +1,86 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 0.313 sec <<< FAILURE! - in TestSuite
+Test3_Get_Collection_Functionality(testquestion1.Test_MyCollection)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at question1.MyCollection.toString(MyCollection.java:113)
+	at testquestion1.Test_MyCollection.Test3_Get_Collection_Functionality(Test_MyCollection.java:32)
+
+Test5_Remove_Functionality_If_Entry_Already_Present(testquestion1.Test_MyCollection)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: 12
+	at question1.MyCollection.remove(MyCollection.java:74)
+	at testquestion1.Test_MyCollection.Test5_Remove_Functionality_If_Entry_Already_Present(Test_MyCollection.java:50)
+
+Test10_Rotate_Array(testquestion2.Test_MyCollection)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [{Is, Always, A Fun., Sometimes, Automation, Testing}] but found [question2.MyCollection@54a097cc]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at testquestion2.Test_MyCollection.Test10_Rotate_Array(Test_MyCollection.java:94)
+
+Test1_Able_To_Add_New_Entry_In_Collection(testquestion2.Test_MyCollection)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: Assertion Failed : Not able to add number 5 in collection expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at testquestion2.Test_MyCollection.Test1_Able_To_Add_New_Entry_In_Collection(Test_MyCollection.java:16)
+
+Test3_Get_Collection_Functionality(testquestion2.Test_MyCollection)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Assertion Failed : Not able to read collection expected [{}] but found [question2.MyCollection@735b478]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at testquestion2.Test_MyCollection.Test3_Get_Collection_Functionality(Test_MyCollection.java:32)
+
+Test4_DoubleCapacity(testquestion2.Test_MyCollection)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Assertion Failed : Not able to add number in collection once it get fulled expected [{4,5,-4,-5,6}] but found [question2.MyCollection@2096442d]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at testquestion2.Test_MyCollection.Test4_DoubleCapacity(Test_MyCollection.java:41)
+
+Test5_Remove_Functionality_If_Entry_Already_Present(testquestion2.Test_MyCollection)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: Assetion Failed : Not Able to delete entry from collection expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at testquestion2.Test_MyCollection.Test5_Remove_Functionality_If_Entry_Already_Present(Test_MyCollection.java:50)
+
+Test7_Collection_Length_Functionality(testquestion2.Test_MyCollection)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [6] but found [0]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at testquestion2.Test_MyCollection.Test7_Collection_Length_Functionality(Test_MyCollection.java:66)
+
+Test8_Search_Functionality_If_Enrty_Exists(testquestion2.Test_MyCollection)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at testquestion2.Test_MyCollection.Test8_Search_Functionality_If_Enrty_Exists(Test_MyCollection.java:75)
+
+Test9_Search_Functionality_If_Enrty_Not_Exists(testquestion2.Test_MyCollection)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [-1] but found [0]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at testquestion2.Test_MyCollection.Test9_Search_Functionality_If_Enrty_Not_Exists(Test_MyCollection.java:84)
+

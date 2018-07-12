@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="testquestion2.Test_MyCollection">
+        <methods>
+          <include name="Test5_Remove_Functionality_If_Entry_Already_Present"/>
+          <include name="Test3_Get_Collection_Functionality"/>
+          <include name="Test9_Search_Functionality_If_Enrty_Not_Exists"/>
+          <include name="Test4_DoubleCapacity"/>
+          <include name="Test10_Rotate_Array"/>
+          <include name="Test1_Able_To_Add_New_Entry_In_Collection"/>
+          <include name="Test7_Collection_Length_Functionality"/>
+          <include name="Test8_Search_Functionality_If_Enrty_Exists"/>
+        </methods>
+      </class> <!-- testquestion2.Test_MyCollection -->
+      <class name="testquestion1.Test_MyCollection">
+        <methods>
+          <include name="Test3_Get_Collection_Functionality"/>
+          <include name="Test5_Remove_Functionality_If_Entry_Already_Present"/>
+        </methods>
+      </class> <!-- testquestion1.Test_MyCollection -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
